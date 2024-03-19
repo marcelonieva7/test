@@ -21,7 +21,7 @@ jobs:
           cache: "npm"
       - name: Set up environment
         env:
-          GITHUB_ENV: env/development.env
+          GITHUB_ENV: /env/development.env
         run: |
           set -a
           . $GITHUB_ENV
