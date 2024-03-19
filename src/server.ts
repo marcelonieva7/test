@@ -1,5 +1,5 @@
 /**
- * Setup express server. test
+ * Setup express server.
  */
 
 import cookieParser from 'cookie-parser'
