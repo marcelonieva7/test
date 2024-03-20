@@ -20,15 +20,7 @@ jobs:
           node-version: "20.11.1"
           cache: "npm"
       - name: Set up environment
-        env:
-          GITHUB_ENV: /env/development.env
-        run: |
-          set -a
-          . $GITHUB_ENV
-          set +a
-      - name: Run your commands using the environment variables from the .env file
-        run: |
-          echo $YOUR_ENV_VARIABLE
+        run: echo "${{secrets.TEST_ENV }}" > env/test.env
       # install dependencies
       - run: npm ci
       # run ESLint
