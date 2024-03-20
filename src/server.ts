@@ -101,6 +101,7 @@ const getCountries = async () => {
 try {
   sequelize.authenticate().then(() => {
     logger.info('Connection to DB has been established successfully.')
+    logger.info('TEST')
     getCountries()
   })
 } catch (error) {
