@@ -21,7 +21,7 @@ jobs:
           cache: "npm"
       - name: Set up environment
       #  run: touch env/test.env
-      - run: echo "${{secrets.TEST_ENV }}" > env/test.env
+        run: echo "${{secrets.TEST_ENV }}" > env/test.env
       # install dependencies
       - run: npm ci
       # run ESLint
